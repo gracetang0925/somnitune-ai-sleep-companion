@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SomniTune 星梦：个性化 AI 睡眠陪伴与音乐偏好追踪原型。Grace Tang 的产品策划、内容运营与数据闭环案例。"
+    />
+    <meta name="theme-color" content="#11142a" />
+    <meta property="og:title" content="SomniTune — Your sleep taste, remembered" />
+    <meta
+      property="og:description"
+      content="A personalized bedtime-content and preference-tracking case study by Grace Tang."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gracetang0925.github.io/somnitune-ai-sleep-companion/" />
+    <title>SomniTune 星梦 · AI 睡眠陪伴产品案例｜Grace Tang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要内容</a>
+
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="SomniTune 首页">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SomniTune <small>星梦</small></span>
+      </a>
+      <nav class="nav-links" aria-label="页面章节">
+        <a href="#insight">洞察</a>
+        <a href="#strategy">策略</a>
+        <a href="#prototype">原型</a>
+        <a href="#data">数据</a>
+        <a href="#operations">运营</a>
+      </nav>
+      <a class="header-link" href="https://github.com/gracetang0925/somnitune-ai-sleep-companion" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">PRODUCT & CONTENT OPERATIONS CASE · 2026</p>
+          <h1>不是再推荐一段睡眠内容，<br />而是<em>记住什么真的适合你。</em></h1>
+          <p class="hero-lede">
+            SomniTune 是一款个性化睡前内容原型：用一次轻量选择、一次完整体验和一句真实反馈，逐步理解用户偏好的声音、时长与互动方式。
+          </p>
+          <div class="hero-meta" aria-label="项目概况">
+            <div><span>项目角色</span><strong>独立策划与开发</strong></div>
+            <div><span>核心范围</span><strong>产品 · 内容 · 数据运营</strong></div>
+            <div><span>原型状态</span><strong>可交互概念验证</strong></div>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#prototype">体验今晚推荐</a>
+            <a class="button button-secondary" href="#data">查看指标框架</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="SomniTune 个性化睡眠推荐示意">
+          <div class="moon-glow" aria-hidden="true"></div>
+          <div class="phone-shell hero-phone">
+            <div class="phone-top"><span>22:48</span><span>● ● ●</span></div>
+            <div class="phone-screen">
+              <p class="screen-kicker">FOR YOUR NIGHT</p>
+              <h2>今晚，先让思绪慢下来</h2>
+              <div class="night-pulse" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="recommend-card">
+                <span class="content-badge">疗愈互动 · 12 MIN</span>
+                <h3>把今天轻轻放下</h3>
+                <p>低语音 · 极简钢琴 · 无需持续看屏</p>
+                <div class="reason-box"><b>为什么推荐</b><span>你连续两次完成了 10–15 分钟的低互动内容</span></div>
+              </div>
+              <button class="demo-cta" type="button" data-jump-prototype>开始今晚体验</button>
+            </div>
+          </div>
+          <div class="floating-pill pill-one"><span>♫</span><b>低频钢琴</b></div>
+          <div class="floating-pill pill-two"><span>12</span><b>分钟</b></div>
+          <div class="floating-pill pill-three"><span>✓</span><b>无需看屏</b></div>
+        </div>
+      </section>
+
+      <aside class="truth-note" aria-label="项目真实性和健康边界说明">
+        <span class="truth-icon" aria-hidden="true">i</span>
+        <p>
+          <strong>案例说明：</strong>本页为独立完成的产品概念与交互原型，人物、内容与数据均为设计演示，不代表真实用户或上线结果。SomniTune 定位为睡前放松与内容偏好工具，不提供医疗诊断或治疗；持续睡眠困扰应寻求专业医疗帮助。
+        </p>
+      </aside>
+
+      <section class="section insight" id="insight">
+        <div class="section-heading">
+          <p class="eyebrow">01 · PROBLEM & OPPORTUNITY</p>
+          <h2>内容越来越多，<br />“适合我的”仍然很难留下。</h2>
+          <p>
+            新加坡 HealthHub 建议建立稳定的睡前习惯，并提到放松练习与舒缓音乐。现有产品已经提供丰富内容、沉浸故事或自适应声景；本项目进一步追问：用户今晚为什么选、听完是否合适、下一次应如何更准？
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card">
+            <span>01</span>
+            <h3>选择前：描述不了</h3>
+            <p>用户往往只知道“想放松”，却很难表达自己需要人声、音乐、环境音还是互动。</p>
+          </article>
+          <article class="problem-card">
+            <span>02</span>
+            <h3>体验中：行为没被读懂</h3>
+            <p>跳过、听完、降低音量等行为蕴含偏好，却容易被简化为一次播放记录。</p>
+          </article>
+          <article class="problem-card">
+            <span>03</span>
+            <h3>体验后：反馈太费力</h3>
+            <p>睡前用户不愿填写长问卷；没有低负担反馈，内容运营就难以形成可行动洞察。</p>
+          </article>
+        </div>
+
+        <div class="landscape-panel">
+          <div class="landscape-intro">
+            <p class="panel-label">LANDSCAPE SCAN</p>
+            <h3>从“内容供给”走向“偏好学习”</h3>
+            <p>以下比较基于品牌公开功能，仅用于识别设计机会，并非完整产品评测。</p>
+          </div>
+          <div class="landscape-table" role="table" aria-label="睡眠内容产品对比">
+            <div class="table-row table-head" role="row">
+              <span role="columnheader">产品</span><span role="columnheader">核心供给</span><span role="columnheader">个性化线索</span><span role="columnheader">本项目启发</span>
+            </div>
+            <div class="table-row" role="row">
+              <b role="cell">Calm</b><span role="cell">故事、冥想、音乐、声景</span><span role="cell">收藏与播放列表</span><span role="cell">内容类型要丰富且易理解</span>
+            </div>
+            <div class="table-row" role="row">
+              <b role="cell">Headspace</b><span role="cell">Sleepcasts、音乐、Wind Downs</span><span role="cell">内容内可调声音比例</span><span role="cell">睡前交互必须轻量</span>
+            </div>
+            <div class="table-row" role="row">
+              <b role="cell">Endel</b><span role="cell">实时生成的功能声景</span><span role="cell">时间、天气、心率等输入</span><span role="cell">情境数据可增强适配</span>
+            </div>
+            <div class="table-row accent-row" role="row">
+              <b role="cell">SomniTune</b><span role="cell">冥想、音乐、疗愈互动</span><span role="cell">行为＋一句反馈＋可解释标签</span><span role="cell">让推荐原因与迭代依据可见</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="source-strip">
+          <span>公开依据</span>
+          <a href="https://www.healthhub.sg/programmes/mindsg/caring-for-ourselves/sleeping-well-adults" target="_blank" rel="noreferrer">HealthHub：睡眠习惯 ↗</a>
+          <a href="https://eng.calm.com/sleep" target="_blank" rel="noreferrer">Calm Sleep ↗</a>
+          <a href="https://www.headspace.com/content/categories/sleep?origin=app" target="_blank" rel="noreferrer">Headspace Sleep ↗</a>
+          <a href="https://endel.io/" target="_blank" rel="noreferrer">Endel ↗</a>
+        </div>
+      </section>
+
+      <section class="section strategy" id="strategy">
+        <div class="section-heading compact">
+          <p class="eyebrow">02 · PRODUCT STRATEGY</p>
+          <h2>三种内容，不是三个入口；<br />而是三种睡前任务。</h2>
+        </div>
+
+        <div class="jobs-grid">
+          <article class="job-card meditation">
+            <div class="job-icon" aria-hidden="true">◌</div>
+            <p class="panel-label">GUIDED MEDITATION</p>
+            <h3>冥想｜需要有人带我慢下来</h3>
+            <p>适合思绪较多、希望跟随清晰指引的夜晚。</p>
+            <div class="tag-list"><span>呼吸引导</span><span>身体扫描</span><span>人声偏好</span></div>
+          </article>
+          <article class="job-card music">
+            <div class="job-icon" aria-hidden="true">♫</div>
+            <p class="panel-label">SLEEP MUSIC</p>
+            <h3>音乐｜我只想让空间安静一点</h3>
+            <p>适合不想处理信息、需要稳定背景声音的夜晚。</p>
+            <div class="tag-list"><span>节奏能量</span><span>声音纹理</span><span>时长</span></div>
+          </article>
+          <article class="job-card ritual">
+            <div class="job-icon" aria-hidden="true">✦</div>
+            <p class="panel-label">GENTLE RITUAL</p>
+            <h3>疗愈互动｜我想把今天轻轻放下</h3>
+            <p>用一句输入和一个结束动作，将注意力从白天切换到休息。</p>
+            <div class="tag-list"><span>情绪签到</span><span>一句反思</span><span>低屏幕依赖</span></div>
+          </article>
+        </div>
+
+        <div class="principles">
+          <article><span>01</span><div><h3>少问一点</h3><p>一次签到最多三个选择，默认可直接跳过。</p></div></article>
+          <article><span>02</span><div><h3>解释一点</h3><p>告诉用户“为什么今晚推荐”，建立可控感。</p></div></article>
+          <article><span>03</span><div><h3>记住一点</h3><p>每次只更新少量高置信度标签，避免过度推断。</p></div></article>
+          <article><span>04</span><div><h3>屏幕暗一点</h3><p>深色、低刺激、内容开始后无需持续看屏。</p></div></article>
+        </div>
+      </section>
+
+      <section class="section prototype-section" id="prototype">
+        <div class="section-heading inverse">
+          <p class="eyebrow">03 · INTERACTIVE PROTOTYPE</p>
+          <h2>用 60 秒走完一次<br />“推荐—体验—学习”。</h2>
+          <p>选择今晚状态与内容偏好，原型会生成推荐理由；完成后的一次轻反馈将更新右侧偏好画像。</p>
+        </div>
+
+        <div class="prototype-layout">
+          <div class="prototype-phone phone-shell" aria-live="polite">
+            <div class="phone-top"><span>22:48</span><span>● ● ●</span></div>
+            <div class="prototype-screen" id="prototypeScreen">
+              <div class="prototype-progress" aria-label="原型进度"><span class="active"></span><span></span><span></span><span></span></div>
+
+              <section class="prototype-step active" data-step="1">
+                <p class="screen-kicker">TONIGHT CHECK-IN</p>
+                <h3>现在的你，更接近哪一种？</h3>
+                <p class="screen-muted">不用准确，选一个最接近的就好。</p>
+                <div class="option-stack" data-group="mood">
+                  <button class="choice active" type="button" data-value="思绪很多"><span>☁</span><div><b>思绪很多</b><small>需要有人带我慢下来</small></div></button>
+                  <button class="choice" type="button" data-value="身体疲惫"><span>◒</span><div><b>身体疲惫</b><small>想直接进入安静状态</small></div></button>
+                  <button class="choice" type="button" data-value="情绪未落"><span>≈</span><div><b>情绪还没落下</b><small>想给今天一个结束动作</small></div></button>
+                </div>
+                <button class="prototype-next" type="button" data-next>继续</button>
+              </section>
+
+              <section class="prototype-step" data-step="2">
+                <p class="screen-kicker">CONTENT MODE</p>
+                <h3>今晚想被怎样陪伴？</h3>
+                <div class="mode-grid" data-group="mode">
+                  <button class="mode-choice active" type="button" data-value="冥想"><span>◌</span><b>冥想</b><small>清晰引导</small></button>
+                  <button class="mode-choice" type="button" data-value="音乐"><span>♫</span><b>音乐</b><small>稳定背景</small></button>
+                  <button class="mode-choice" type="button" data-value="疗愈互动"><span>✦</span><b>疗愈互动</b><small>轻轻收尾</small></button>
+                </div>
+                <p class="mini-label">可用时长</p>
+                <div class="chip-row" data-group="duration">
+                  <button type="button" data-value="8">8 分钟</button>
+                  <button class="active" type="button" data-value="12">12 分钟</button>
+                  <button type="button" data-value="20">20 分钟</button>
+                </div>
+                <div class="prototype-actions"><button class="text-button" type="button" data-back>返回</button><button class="prototype-next" type="button" data-next>生成推荐</button></div>
+              </section>
+
+              <section class="prototype-step" data-step="3">
+                <p class="screen-kicker">YOUR MATCH</p>
+                <div class="session-art" aria-hidden="true"><div class="session-moon"></div><div class="wave-bars"><i></i><i></i><i></i><i></i><i></i></div></div>
+                <span class="content-badge" id="resultBadge">冥想 · 12 MIN</span>
+                <h3 id="resultTitle">雾中慢呼吸</h3>
+                <p class="screen-muted" id="resultMeta">柔和女声 · 慢速引导 · 雨声底色</p>
+                <div class="reason-box prototype-reason"><b>为什么推荐</b><span id="resultReason">你今晚思绪很多，且选择了需要清晰引导的冥想。</span></div>
+                <button class="prototype-next play-button" type="button" data-complete><span>▶</span>模拟完成本次内容</button>
+                <button class="skip-button" type="button" data-skip>这次不适合，跳过</button>
+              </section>
+
+              <section class="prototype-step" data-step="4">
+                <p class="screen-kicker">ONE-TAP FEEDBACK</p>
+                <h3 id="feedbackTitle">这次陪伴，合适吗？</h3>
+                <p class="screen-muted">你的选择只用于改善下一次推荐。</p>
+                <div class="feedback-grid" data-group="feedback">
+                  <button class="active" type="button" data-value="刚刚好"><span>◡</span><b>刚刚好</b></button>
+                  <button type="button" data-value="人声太多"><span>◌</span><b>人声太多</b></button>
+                  <button type="button" data-value="节奏不对"><span>≈</span><b>节奏不对</b></button>
+                  <button type="button" data-value="时间太长"><span>⌛</span><b>时间太长</b></button>
+                </div>
+                <button class="prototype-next" type="button" data-finish>保存偏好</button>
+              </section>
+
+              <section class="prototype-step" data-step="5">
+                <div class="complete-mark" aria-hidden="true">✓</div>
+                <p class="screen-kicker">PREFERENCE UPDATED</p>
+                <h3>今晚的选择，已经记住了。</h3>
+                <p class="screen-muted" id="finalSummary">下次将优先推荐 10–15 分钟、柔和人声的冥想内容。</p>
+                <div class="final-card"><span>新增标签</span><div id="finalTags"><b>冥想偏好</b><b>12 分钟</b><b>柔和人声</b></div></div>
+                <button class="prototype-next" type="button" data-restart>重新体验</button>
+              </section>
+            </div>
+          </div>
+
+          <aside class="profile-panel" aria-label="实时偏好画像">
+            <div class="profile-header">
+              <div><p class="panel-label">LIVE PREFERENCE PROFILE</p><h3>偏好画像</h3></div>
+              <span class="confidence" id="confidenceLabel">初步 · 32%</span>
+            </div>
+            <div class="profile-row"><span>内容模式</span><div class="meter"><i id="modeMeter" style="width: 58%"></i></div><b id="modeLabel">冥想</b></div>
+            <div class="profile-row"><span>理想时长</span><div class="meter"><i id="durationMeter" style="width: 45%"></i></div><b id="durationLabel">10–15m</b></div>
+            <div class="profile-row"><span>互动程度</span><div class="meter"><i id="interactionMeter" style="width: 38%"></i></div><b id="interactionLabel">低</b></div>
+            <div class="profile-row"><span>声音纹理</span><div class="meter"><i id="textureMeter" style="width: 64%"></i></div><b id="textureLabel">雨声</b></div>
+            <div class="profile-log">
+              <p class="panel-label">EVENT LOG</p>
+              <ol id="eventLog">
+                <li><span>content_impression</span><time>ready</time></li>
+              </ol>
+            </div>
+            <p class="profile-note">演示数据仅保存在当前浏览器会话；刷新页面即可清除。</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section data-section" id="data">
+        <div class="section-heading">
+          <p class="eyebrow">04 · DATA OPERATIONS</p>
+          <h2>把一次“听完了”，<br />拆成四个可运营节点。</h2>
+          <p>指标框架服务于推荐质量与内容迭代，不将停留时长误当成睡眠效果，也不采集不必要的敏感信息。</p>
+        </div>
+
+        <div class="event-flow" aria-label="曝光选择完成反馈数据流程">
+          <article><span class="event-number">01</span><div><p>EXPOSURE</p><h3>曝光</h3></div><b>content_impression</b><small>哪类内容被看见？推荐理由是否展开？</small></article>
+          <i aria-hidden="true">→</i>
+          <article><span class="event-number">02</span><div><p>SELECTION</p><h3>选择</h3></div><b>content_select</b><small>用户选择了什么？用了多久做决定？</small></article>
+          <i aria-hidden="true">→</i>
+          <article><span class="event-number">03</span><div><p>COMPLETION</p><h3>完成</h3></div><b>session_complete</b><small>完成、跳过还是中途退出？发生在哪个时间点？</small></article>
+          <i aria-hidden="true">→</i>
+          <article><span class="event-number">04</span><div><p>FEEDBACK</p><h3>反馈</h3></div><b>feedback_submit</b><small>“刚好”还是哪个要素不合适？</small></article>
+        </div>
+
+        <div class="metric-layout">
+          <article class="north-star-card">
+            <p class="panel-label">NORTH-STAR PROXY</p>
+            <h3>7 日适配内容完成率</h3>
+            <div class="formula"><span>被标记“刚刚好”的完成次数</span><i>÷</i><span>已开始的内容次数</span></div>
+            <p>它衡量“内容匹配”而非临床睡眠改善。下一阶段仍需结合回访与长期留存判断价值。</p>
+          </article>
+          <div class="metric-cards">
+            <article><span>发现效率</span><h3>推荐选择率</h3><p>从曝光到选择，判断推荐卡和理由是否有效。</p></article>
+            <article><span>内容质量</span><h3>分段完成率</h3><p>按内容类型、时长、人声与纹理定位流失。</p></article>
+            <article><span>学习速度</span><h3>反馈覆盖率</h3><p>完成后愿意留下轻反馈的用户占比。</p></article>
+            <article><span>信任保护</span><h3>负反馈重复率</h3><p>相同不适标签是否仍被连续推荐。</p></article>
+          </div>
+        </div>
+
+        <div class="schema-panel">
+          <div class="schema-copy">
+            <p class="panel-label">LIGHTWEIGHT DATA MODEL</p>
+            <h3>行为是信号，不是结论。</h3>
+            <p>标签由三类信息共同更新：内容元数据、实际行为和主动反馈。只有在重复信号出现后才提高置信度，并允许用户随时查看或重置。</p>
+          </div>
+          <div class="schema-code" role="img" aria-label="SomniTune 用户偏好数据结构示意">
+            <pre><code>{
+  "content_type": "meditation",
+  "duration_band": "10_15_min",
+  "voice_preference": "soft_female",
+  "sound_texture": ["rain", "minimal_piano"],
+  "interaction_level": "low",
+  "signals": {
+    "completion_count": 2,
+    "positive_feedback": 1,
+    "confidence": 0.64
+  }
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section operations" id="operations">
+        <div class="section-heading compact">
+          <p class="eyebrow">05 · CONTENT OPERATIONS</p>
+          <h2>推荐系统的另一半，<br />是可持续的内容运营。</h2>
+        </div>
+
+        <div class="ops-loop">
+          <article><span>01</span><h3>标注</h3><p>用内容类型、声音、节奏、时长、互动程度统一元数据。</p></article>
+          <article><span>02</span><h3>分发</h3><p>根据今晚情境与历史高置信度标签生成推荐并解释原因。</p></article>
+          <article><span>03</span><h3>观察</h3><p>按四个事件节点查看选择、完成和负反馈，不只看播放量。</p></article>
+          <article><span>04</span><h3>迭代</h3><p>定位高跳过组合，调整内容结构、标签或推荐阈值。</p></article>
+        </div>
+
+        <div class="experiment-board">
+          <div class="experiment-title">
+            <p class="panel-label">FIRST 4-WEEK VALIDATION</p>
+            <h3>上线前，我会先验证三件事</h3>
+          </div>
+          <div class="experiment-list">
+            <article><span>A</span><div><h4>反馈能否足够轻？</h4><p>A/B 测试“一个表情”与“四个原因”，比较反馈覆盖率和次日回访率。</p></div></article>
+            <article><span>B</span><div><h4>解释是否增加信任？</h4><p>比较有/无推荐理由时的选择率、跳过率和偏好重置率。</p></div></article>
+            <article><span>C</span><div><h4>标签是否真的可行动？</h4><p>邀请目标用户进行 7 晚日记研究，检验标签与自述偏好是否一致。</p></div></article>
+          </div>
+        </div>
+
+        <div class="deliverables">
+          <div>
+            <p class="panel-label">MY ROLE & OUTPUTS</p>
+            <h3>从问题定义到可交互验证</h3>
+          </div>
+          <ul>
+            <li><b>产品策划</b><span>定义目标用户、JTBD、内容架构与低干扰交互原则</span></li>
+            <li><b>内容运营</b><span>设计三类内容、标签体系、分发逻辑与四周实验计划</span></li>
+            <li><b>数据运营</b><span>建立四节点事件模型、指标框架与轻量用户画像</span></li>
+            <li><b>原型开发</b><span>独立完成响应式网页、推荐逻辑与实时事件演示</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="closing">
+        <p class="eyebrow">THE PRODUCT THESIS</p>
+        <h2>好的个性化，不是猜得更大胆。<br />是每晚只多理解你一点。</h2>
+        <p>SomniTune · 星梦 / Independent product case by Grace Tang 汤夏禛</p>
+        <a class="button button-primary" href="#prototype">再次体验原型</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Grace Tang · NTU</span>
+      <span>Product strategy · Content operations · Data thinking</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
