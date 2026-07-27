@@ -1,0 +1,9 @@
+{
+  "name": "somnitune-ai-sleep-companion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personalized AI sleep companion and content preference tracking case study",
+  "scripts": {
+    "test": "node tests/validate.mjs"
+  }
+}
